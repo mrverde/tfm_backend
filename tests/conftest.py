@@ -1,10 +1,9 @@
 import pytest
-from application import create_app
+from app import app
 
 
 @pytest.fixture(scope='session')
 def app(request):
-    app = create_app()
 
     ctx = app.app_context()
     ctx.push()

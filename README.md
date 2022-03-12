@@ -38,3 +38,16 @@ To run the tests you have to use the following command:
 ```{bash}
 python -m pytest -vvv
 ```
+
+# WSGI
+
+To run the WSGI server run:
+```{bash}
+uwsgi --ini uwsgi.ini
+```
+
+### Config WSGI
+
+[Follow this tutorial](https://www.digitalocean.com/community/tutorials/como-hacer-funcionar-aplicaciones-de-flask-con-uwsgi-y-nginx-en-ubuntu-18-04-es)
+
+[Read this](https://stackoverflow.com/questions/15878176/uwsgi-invalid-request-block-size)
