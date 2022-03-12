@@ -51,3 +51,5 @@ uwsgi --ini uwsgi.ini
 [Follow this tutorial](https://www.digitalocean.com/community/tutorials/como-hacer-funcionar-aplicaciones-de-flask-con-uwsgi-y-nginx-en-ubuntu-18-04-es)
 
 [Read this](https://stackoverflow.com/questions/15878176/uwsgi-invalid-request-block-size)
+
+[And this](https://learntutorials.net/es/flask/topic/4637/implementando-la-aplicacion-flask-usando-el-servidor-web-uwsgi-con-nginx)
