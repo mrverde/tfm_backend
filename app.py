@@ -1,4 +1,5 @@
 import time
+import os
 from flask import Flask, Blueprint
 from flasgger import Swagger
 from dotenv import dotenv_values
@@ -28,6 +29,7 @@ app.register_blueprint(bp, url_prefix='/api/v1')
 
 
 
-if __name__ == "__main__":
-  app.run(host="0.0.0.0", port=config["PORT"])
+port = int(os.environ.get('PORT', 8080))
 
+if __name__ == '__main__':
+    app.run(threaded=True, host='0.0.0.0', port=port)
